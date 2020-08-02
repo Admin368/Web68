@@ -4,9 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6th Lesson</title>
+    <title>6th Lesson[Forms]</title>
 </head>
 <body>
-    
+    <!--form atributes
+    compasory
+    1.method
+        1.1-POST
+        2.2-GET
+    2.action
+        -In action you write the page name
+        you want the submit the page to.
+
+    ---------------------------------------
+    INPUT TAGS
+        TYPES
+            1.text
+            2.password
+            3.submit
+            4.radio(where u selecte options)
+            5.
+    --> 
+
+    <form action="6.1.html" method="POST">
+        <!--
+        POST -data not shown address bar
+        GET  -data will be shown on addressbar
+        -->
+        Name : <input type= "text" name="full_name"> 
+        <br/>
+        Email: <input type="email" name="full_names">
+        <br>
+        Password: <input type="password">
+        <br/>
+        Gender: 
+        <!--Here the name attribute shuld be same
+        if you only one of them to be selected-->
+
+        <!--you can name all input types,
+        it is useful in server side code like php-->
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br>
+        <input type="checkbox" /> Agree To terms and Conditions
+        <br>
+        <!-- default Col=30 ,rows =6-->
+        <textarea cols="30" rows="1" readonly>Status:Incomplete</textarea>
+        <textarea cols="30" rows="5">Request:</textarea>
+        <br>
+        <input type="color">
+        <br>
+        <input type="date">
+        <br>
+        Number:<input type="number">
+        <br>
+        Submit : <input type="submit">
+
+    </form>
 </body>
 </html>
