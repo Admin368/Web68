@@ -1,0 +1,39 @@
+#body1{
+    color:yellow;
+/*border: size type color*/
+    border: 1px solid black;
+/*border types: solid,dashed,dotted*/
+/* width , without width is full browser width*/
+    
+    
+    padding: 5px;/*padding in all direction*/
+    padding-top: 6px;
+    padding-right: 7px;
+    padding-bottom: 50px;
+    padding-left: 9px;
+    /*or you can right like this is
+    clock wise direction
+    write like this:
+
+    padding: 6px 7px 8px 9px;
+    
+    */
+
+    /*Margin 
+    is distance of border with boundary of browser
+    or another div.
+    */
+    margin: 1px 2px 1px 2px;
+
+/*  background: yellow; */
+/*  background: url(image.jpg) */
+    background-image: url(https://previews.123rf.com/images/merkulovnik/merkulovnik1606/merkulovnik160600186/58592970-splash-of-paint-abstract-background.jpg);
+
+    font-size: 30px;
+    /*font-family: tahoma;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+    text-transform: ;
+    /*capitalize,uppercase,lowercase..*/
+}
