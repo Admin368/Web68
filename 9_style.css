@@ -1,3 +1,26 @@
+#navBody{
+    margin: 0px auto;
+}
+#nav{
+    list-style-type: none; /*removes bullets*/
+    display: ; /*puts the list inline*/
+}
+
+/*this will target the li tag inside the nav id*/
+#nav li{
+    display: inline-block;
+    /*normally li is in Div format "block nature"which 
+    takes whole width, now iline allows you to 
+    spread the contents one feter pyther side ways*/
+    padding: 5px 10px 5px 10px;
+    color: red;
+    cursor: pointer; /*turns cursor to pointer*/
+    border: 1px solid red;
+    background: #f1f1f1;
+}
+
+
+
 #body1{
     border: 5px black;
     border-style: solid;
@@ -6,7 +29,7 @@
 
     background-color: yellow;
 
-    margin: 0px auto;/*auto helps align in middle*/
+    margin-top: 5px;
     width: 700px;
     height: 600px;
 
@@ -28,7 +51,7 @@
 
     background-color: orange;
 
-    margin: 40px 0px 20px 30px;
+    margin: 45px 0px 20px 30px;
     width: 700px;
     height: 600px;
 
