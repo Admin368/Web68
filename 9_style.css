@@ -1,0 +1,82 @@
+#body1{
+    border: 5px black;
+    border-style: solid;
+    border-radius: 10%; /*round-ness*/
+    padding: 10px 20px 20px 30px;;
+
+    background-color: yellow;
+
+    margin: 0px auto;/*auto helps align in middle*/
+    width: 700px;
+    height: 600px;
+
+    text-align: center; /*aligns the text*/
+
+    position: absolute;
+    /*3types of positions:
+    -absolute //all divs positions will start from top left corner and margins will dertimine how far from corner,hence at first, they will be ontop of each other
+    -relative (default) //div's using same css id, populate under each other
+    -fixed
+    */
+}
+
+#body2{
+    border: 5px black;
+    border-style: solid;
+    border-radius: 10%; /*round-ness*/
+    padding: 10px 20px 20px 30px;;
+
+    background-color: orange;
+
+    margin: 40px 0px 20px 30px;
+    width: 700px;
+    height: 600px;
+
+    text-align: center; /*aligns the text*/
+
+    position: absolute;
+}
+
+
+#float1{
+    border: 5px black;
+    border-style: solid;
+    border-radius: 10%; /*round-ness*/
+    padding: 10px 20px 20px 30px;
+
+    background-color: orchid;
+    
+    margin-top: 800px;
+    width: 450px;
+    height: 250px;
+
+    float: left;
+    text-align: left;
+    font-size: 35px;
+
+}
+#float2{
+    border: 5px black;
+    border-style: solid;
+    border-radius: 10%; /*round-ness*/
+    padding: 10px 20px 20px 30px;
+
+    background-color: maroon;
+    
+    margin-top: 800px;
+    width: 450px;
+    height: 250px;
+
+    float: right;
+    text-align: right;
+    font-size: 35px;
+}
+
+/*in css3, you can target all html tags*/
+h1{
+    color: red;
+}
+
+h2,h3{
+    color: green;
+}
