@@ -1,5 +1,5 @@
 # Web68
-My Web Development Journey With HTML, CSS and JQUERY
+Web Development Journey With HTML, CSS and JQUERY
 from beggining to intermediate
 following free lesson:
 "All in one HTML CSS and JQuery"
