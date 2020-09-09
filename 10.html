@@ -8,37 +8,40 @@
     <title>6th Lesson[Forms,inputTypes]</title>
 </head>
 <body>
-
+    
     <div id="form_wrap">
+        <h2>Sign Up To The System</h2>
         <form action="6.1.html" method="POST">
             <table width="100%"> <!--taking 100% of the div-->
                 <tr>
-                    <td>Name</td>
-                    <td><input type= "text" name="full_name"></td>
+                    <td width="30%">Name</td>
+                    <td width="70%" align="left"><input type= "text" name="full_name"></td>
                 </tr>
                 <tr>
-                    <td>Email</td>
-                    <td><input type="email" name="email"></td>
+                    <td width="30%">Email</td>
+                    <td width="70%" align="left"><input type="email" name="email"></td>
                 </tr>
                 <tr>
-                    <td>Password</td>
-                    <td><input type="password" name="password"></td>
+                    <td width="30%">Password</td>
+                    <td width="70%" align="left"><input type="password" name="password"></td>
                 </tr>
-                <tr align="left">
-                    <td>Gender</td>
-                    <td>
+                <tr>
+                    <td width="30%">Gender</td>
+                    <td width="70%" align="left">
                         <input type="radio" name="gender" /> Male
                         <input type="radio" name="gender" /> Female
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td width="30%"></td>
+                    <td width="70%" align="left">
                         <input type="checkbox" /> Agree To terms and Conditions
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                        <input type="submit">
+                    <td width="30%"></td>
+                    <td width="70%" align="left">
+                        <input type="submit" class="btn" value="Sign Up">
                     </td>
                 </tr>
             </table>
