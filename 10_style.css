@@ -1,0 +1,15 @@
+#form_wrap{
+    padding: 40px;
+    width: 50%;
+    margin: 25px auto;
+    background-color: #f1f1f1 ;  
+    text-align: center;  
+}
+input[type=text],input[type=password],input[type=email]{ 
+    padding:10px;
+    font-size: 14px;
+    border: 1px solid #b3b3b3;
+    background-color: white;
+    outline: none;
+    margin: 5px 0px 5px 0px;
+}
