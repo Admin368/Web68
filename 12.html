@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://css.gg/adidas.css' rel='stylesheet'>
+    <link href='https://css.gg/trending.css' rel='stylesheet'>
+    <link href='https://css.gg/timer.css' rel='stylesheet'>
+    <title>Node2</title>
+    <script src="https://kit.fontawesome.com/79db79c7b1.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/codepen-brands.svg">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="topbar">
+            <div id="title"> <a>SITE</a></div>
+            <div id="navigation">
+                <a href="">HOME</a>
+                <a href="">ACCOUNT</a>
+                <a href="">ABOUT US</a>
+            </div>
+        </div>
+        <div id="context">
+            <div id="sidebar">
+                <ul>
+                    <li>
+                        <div id="icon"><i class="fab fa-battle-net fa-2x"></i></div>
+                        <div id="clear"></div>
+                        <span id="options">TRENDING</span>
+                    </li>
+                    <li>
+                        <div id="icon"><i class="far fa-clock fa-2x"></i></div>
+                        <div id="clear"></div>
+                        <span id="options">HISTORY</span>
+                    </li>
+                    <li>
+                        <div id="icon"><i class="fas fa-book fa-2x"></i></div>
+                        <div id="clear"></div>
+                        <span id="options">LIBRARY</span>
+                    </li>
+                    <li>
+                        <div id="icon"><i class="fab fa-adversal fa-2x"></i></div>
+                        <div id="clear"></div>
+                        <span id="options">ADVERT</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="content"><p></p></div>
+        </div>
+        <div id="footer"><a href="">MARAVIAN©2020</a></div>
+    </div>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root{
+    --color-basic: #616161;
+    --font-main: 'Roboto', sans-serif;
+}
+*{
+    font-family: var(--font-main);
+}
+#wrapper{
+width: 100vw;
+height: 100vh;
+margin: 0px;
+padding: 0px;
+/* position: relative; */
+overflow: hidden;
+/* border: 1px solid black; */
+/* overflow: hidden; */
+}
+#topbar{
+width: 100%;
+/* height: 40%; */
+/* border: 1px solid blue; */
+/* display: flex;
+flex-wrap: wrap; */
+border-bottom: 2px solid rgba(0, 0, 0, 0.336);
+/* overflow: hidden; */
+
+}
+#title{
+width:100%;
+height:70px;
+text-align: center;
+font-size: 50px;
+margin: 0px;
+padding: 0px;
+/* position: relative; */
+font-size: 70px;
+font-family: 'Roboto', sans-serif;
+
+/* border-right: 1px solid black;     */
+}
+#navigation{
+top:0%;
+left:0%;
+width:100%;
+height:100%;
+overflow:hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+/* position: relative; */
+/* align-items: center; */
+/* border: 1px solid red; */
+}
+#navigation a {
+text-align: center;
+background-color: var(--color-basic);
+color: white;
+padding: 14px 16px;
+text-decoration:none;
+font-size: 17px;
+}
+#context{
+width: 100%;
+height: 70%;
+/* border: 1px solid green; */
+display: flex;
+flex-wrap: wrap;
+/* overflow: hidden; */
+}
+#sidebar{
+position:absolute;
+z-index:0;
+width:  60px;
+height: 550px;
+/* border: 1px solid red; */
+transition: 1s;
+overflow: hidden;
+/* color: #616161; */
+background-color: var(--color-basic);
+/* overflow: hidden; */
+}
+#sidebar:hover{
+    width:135px;
+    /* color:white; */
+}
+#sidebar:hover #options{
+    color: white;
+}
+#sidebar:hover #icon{
+    /* padding: px 0px 0px 20px; */
+    padding-left: -10px;
+    color: white;
+}
+#sidebar ul{
+    padding: 0px;
+    margin:0px;
+}
+#sidebar li{
+    height: 50px;
+    width: 100%;
+    /* padding: 0px; */
+    /* margin: 0px auto; */
+    /* margin-top: 20px; */
+    /* min-height: 50px; */
+    /* list-style:none; */
+        /* text-align: right; */
+    /* list-style-type: none; */
+    overflow: hidden;
+    /* text-align:right; */
+    position: relative;
+    z-index: 0;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    border-bottom:1px solid white;
+}
+#icon{
+    top: 20%;
+    left: 20%;
+    /* box-sizing: border-box;
+    position: relative;
+    display: block; */
+    width: 30px;
+    height: 30px;
+    /* border-top: 2px solid;
+    border-right: 2px solid */
+    position: absolute;
+    
+    /* margin: -25px 0 0 -25px; */
+    /* width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2; */
+    /* position: absolute; */
+    /* left: 0px;
+    top: 0px; */
+    /* text-align: center; */
+    /* margin: 0px auto;
+    padding: 0px 0px 0px 0px; */
+    /* padding: px 0px 0px 30px; */
+    /* border: 1px solid red; */
+    /* width: 10px; */
+    /* overflow: hidden; */
+    /* float:left; */
+    transition: 1s;
+    transition-timing-function: ease;
+    /* border: 1px red solid; */
+}
+#icon:hover{
+    color: red !important;
+    cursor: pointer;
+}
+#options{
+    top: 35%;
+    left: 0%;
+    /* width:50%; */
+    z-index:3;
+    /* left: 0px;
+    top: 0px; */
+    /* padding: 60px; */
+    /* margin: 0px 0px 0px 60px; */
+    /* text-align: bottom; */
+    /* margin:0px auto; */
+    position: relative;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: transparent;
+    transition: 1s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    float:right;
+}
+#options:hover{
+    color: red !important;
+    cursor: pointer;
+}
+
+
+#content{
+width: 80%;
+height: 100%;
+/* border: 1px solid orange; */
+/* overflow: hidden; */
+}
+#footer{
+width: 100%;
+height: 10%;
+text-align: center;
+font-size: 40px;
+/* border: 1px solid yellow; */
+/* overflow: hidden; */
+}
+#footer a{
+text-decoration: none;
+}
+#clear{
+clear: both;
+}
+</style>
+<script>
+    // alert("hello");
+    $(document).ready(function(){
+     $("#sidebar").mouseover(function(){
+         $("#icon").css("background-color", "blue");
+     });
+});
+</script>
+</html>
