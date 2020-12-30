@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://css.gg/adidas.css' rel='stylesheet'>
+    <title>Node2</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="topbar">
+            <div id="title"> <p>SITE</p></div>
+            <div id="navigation">
+                <a href="">HOME</a>
+                <a href="">ACCOUNT</a>
+                <a href="">ABOUT US</a>
+            </div>
+        </div>
+        <div id="context">
+            <div id="sidebar">
+                <ul>
+                    <li>
+                        <div id="icon"><div class="gg-adidas"></div></div>
+                        <!-- <div id="clear"></div> -->
+                        <span id="options">TRENDING</span>
+                    </li>
+                    <li>
+                        <div id="icon"></div>
+                        <span id="options">HISTORY</span>
+                    </li>
+                    <li>
+                        <div id="icon"></div>
+                        <span id="options">LIBRARY</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="content"><p></p></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+#wrapper{
+width: 1366px;
+height: 768px;
+/* border: 1px solid black; */
+/* overflow: hidden; */
+}
+#topbar{
+width: 100%;
+height: 20%;
+/* border: 1px solid blue; */
+display: flex;
+flex-wrap: wrap;
+border-bottom: 2px solid rgba(0, 0, 0, 0.336);
+/* overflow: hidden; */
+}
+#title{
+width:49%;
+height:100%;
+text-align: center;
+font-size: 50px;
+font-family: 'Roboto', sans-serif;
+/* border-right: 1px solid black;     */
+}
+#navigation{
+width:50%;
+height:100%;
+overflow:hidden;
+/* align-items: center; */
+/* border: 1px solid red; */
+}
+#navigation a {
+text-align: center;
+background-color: rgba(0, 0, 0, 0.336);
+color: white;
+padding: 14px 16px;
+text-decoration:none;
+font-size: 17px;
+}
+#context{
+width: 100%;
+height: 70%;
+/* border: 1px solid green; */
+display: flex;
+flex-wrap: wrap;
+/* overflow: hidden; */
+}
+#sidebar{
+position:absolute;
+z-index:0;
+width:  10%;
+height: 100%;
+/* border: 1px solid red; */
+transition: 1s;
+overflow: hidden;
+/* color: #616161; */
+background-color: #616161;
+/* overflow: hidden; */
+}
+#sidebar:hover{
+    width:170px;
+    /* color:white; */
+}
+#sidebar:hover #options{
+    color: white;
+}
+#sidebar:hover #icon{
+    /* padding: px 0px 0px 20px; */
+    padding-left: 10px;
+    color: white;
+}
+#sidebar ul{
+    padding: 0px;
+    margin:0px;
+}
+#sidebar li{
+    height: 10px;
+    width: 100%;
+    /* padding: 0px; */
+    /* margin: 0px auto; */
+    /* margin-top: 20px; */
+    /* min-height: 50px; */
+    /* list-style:none; */
+        /* text-align: right; */
+    /* list-style-type: none; */
+    overflow: hidden;
+    text-align:right;
+    padding: 20px 0px 20px 0px;
+    border-bottom:1px solid white;
+}
+#icon{
+    /* width:20px; */
+    /* position: relative; */
+    position: relative;
+    /* left: 0px;
+    top: 0px; */
+    z-index: 2;
+    text-align: center;
+    padding-left: 20px;
+    /* padding: px 0px 0px 30px; */
+    border: 1px solid red;
+    /* width: 10px; */
+    overflow: hidden;
+    float:left;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+#options{
+    /* width:50%; */
+    position: relative;
+    /* left: 0px;
+    top: 0px; */
+    z-index:3;
+    padding: 0px 0px 0px 60px;
+    text-align:top;
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+    color:red;
+    transition: 1s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    /* float:right; */
+}
+#options:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+#content{
+width: 80%;
+height: 100%;
+/* border: 1px solid orange; */
+/* overflow: hidden; */
+}
+#footer{
+width: 100%;
+height: 10%;
+/* border: 1px solid yellow; */
+/* overflow: hidden; */
+}
+#clear{
+clear: both;
+}
+</style>
+<script>
+    // alert("hello");
+    $(document).ready(function(){
+     $("#sidebar").mouseover(function(){
+         $("#icon").css("background-color", "red");
+     });
+});
+</script>
+</html>
